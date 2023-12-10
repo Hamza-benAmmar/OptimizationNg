@@ -21,6 +21,7 @@ import { RhComponent } from './optimizationPattern/rh/rh.component';
 import { UserListComponent } from './optimizationPattern/user-list/user-list.component';
 import { FibonacciPipe } from './pipes/fibonacci.pipe';
 import { AddUserComponent } from '../app/optimizationPattern/add-user/add-user.component';
+import { ChartComponent } from '../app/optimizationPattern/chart/chart.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { AddUserComponent } from '../app/optimizationPattern/add-user/add-user.c
     UserListComponent,
     FibonacciPipe,
     AddUserComponent,
+    ChartComponent,
   ],
   imports: [
     BrowserModule,

@@ -15,13 +15,6 @@ import { List } from 'immutable';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class UserListComponent {
-  @Input() usersCluster: string = '';
   @Input() users: List<User> | null = null;
   @Output() add = new EventEmitter<string>();
-  userFullName: string = '';
-
-  addUser() {
-    this.add.emit(this.userFullName);
-    this.userFullName = '';
-  }
 }

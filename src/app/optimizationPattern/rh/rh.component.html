@@ -3,14 +3,11 @@
   <div class="col">
     <div class="alert alert-info">List of bosses</div>
     <app-add-user (add)="oddUsers = addUser(oddUsers, $event)"></app-add-user>
-    <app-user-list [users]="oddUsers" [usersCluster]="'Boss'"></app-user-list>
+    <app-user-list [users]="oddUsers"></app-user-list>
   </div>
   <div class="col">
     <div class="alert alert-info">List of Workers</div>
     <app-add-user (add)="evenUsers = addUser(evenUsers, $event)"></app-add-user>
-    <app-user-list
-      [users]="evenUsers"
-      [usersCluster]="'Workers'"
-    ></app-user-list>
+    <app-user-list [users]="evenUsers"></app-user-list>
   </div>
 </div>

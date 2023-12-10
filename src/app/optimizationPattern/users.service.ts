@@ -12,7 +12,7 @@ export interface User {
 export class UsersService {
   users: User[] = [];
   constructor() {
-    for (let i = 0; i < 1000; i++)
+    for (let i = 0; i < 50; i++)
       this.users.push({
         name: faker.name.fullName(),
         age: faker.datatype.number({ min: 18, max: 30 }),

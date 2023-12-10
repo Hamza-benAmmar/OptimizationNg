@@ -4,13 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CustomStructuralDirective } from './directives/custom-structural.directive';
-import {FormsModule} from "@angular/forms";
+import { FormsModule } from '@angular/forms';
 import { AfterDelayDirective } from './directives/after-delay.directive';
 import { RepeatDirective } from './directives/repeat.directive';
-import {TestService} from "./test/services/test.service";
-import {FirstModule} from "./first/first.module";
+import { TestService } from './test/services/test.service';
+import { FirstModule } from './first/first.module';
 import { TestUnsbscribeComponent } from './test-unsbscribe/test-unsbscribe.component';
-import {HttpClientModule} from "@angular/common/http";
+import { HttpClientModule } from '@angular/common/http';
 import { MergeMapComponent } from './rxjsOperators/merge-map/merge-map.component';
 import { SwitchMapComponent } from './rxjsOperators/switch-map/switch-map.component';
 import { FlatternOperatorComponent } from './rxjsOperators/flattern-operator/flattern-operator.component';
@@ -20,6 +20,7 @@ import { FilsComponent } from './components/fils/fils.component';
 import { RhComponent } from './optimizationPattern/rh/rh.component';
 import { UserListComponent } from './optimizationPattern/user-list/user-list.component';
 import { FibonacciPipe } from './pipes/fibonacci.pipe';
+import { AddUserComponent } from '../app/optimizationPattern/add-user/add-user.component';
 
 @NgModule({
   declarations: [
@@ -36,16 +37,17 @@ import { FibonacciPipe } from './pipes/fibonacci.pipe';
     FilsComponent,
     RhComponent,
     UserListComponent,
-    FibonacciPipe
+    FibonacciPipe,
+    AddUserComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     FirstModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [TestService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
